@@ -1,7 +1,7 @@
 section .text
 
-global _main
-_main:
+global _start
+_start:
     jmp _get_str
 _get_str:
     call _shellcode
