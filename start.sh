@@ -10,6 +10,10 @@ if [ "$1" == "" ]; then
     exit 1;
 fi
 
+# validar input
+
+# validar binario
+
 cat $PREV/flag.txt | $SELCLIP && \
 scp -P 4242 $1@$IP:/home/user/$1/$1 $PWD/$1 && \
 docker build . -t rain && \
